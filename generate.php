@@ -29,6 +29,8 @@ foreach ($exam['questions'] as $entry) {
     $col++;
 }
 
+echo "Weights sum: $totalWeight\n";
+
 $terms = [];
 for ($i=2; $i<$col; $i++) {
     $cell = $sheet->getCellByColumnAndRow($i, 2);
